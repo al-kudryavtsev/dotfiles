@@ -1,0 +1,13 @@
+- defaults:
+    link:
+      relink: true
+
+- link:
+    ~/.bashrc: bashrc
+    ~/.Xresources: Xresources
+    ~/.config/i3: config/i3
+    ~/.config/i3status: config/i3status
+    ~/.config/i3blocks: config/i3blocks
+    ~/.config/sway: config/sway
+    ~/.config/compton.conf: config/compton.conf
+
