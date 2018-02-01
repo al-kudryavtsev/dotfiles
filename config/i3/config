@@ -124,9 +124,9 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Enable Touchpad tap-to-click
-exec "xinput set-prop 11 279 1"
+exec --no-startup-id "xinput set-prop 'SynPS/2 Synaptics TouchPad' 'libinput Tapping Enabled' 1"
 # Set acceleration to 1.0
-exec "set-prop 11 287 1.0"
+exec --no-startup-id "xinput set-prop 'SynPS/2 Synaptics TouchPad' 'libinput Accel Speed' 1.0"
 
 exec --no-startup-id nm-applet
 exec --no-startup-id "setxkbmap -model pc105 -layout us,ru -option grp:caps_toggle"
@@ -137,6 +137,7 @@ exec --no-startup-id xautolock -time 5 -locker "i3lock -i ./lock-background.png"
 bindsym $mod+o exec --no-startup-id "i3lock -i ./lock-background.png"
 bindsym Print exec "scrot -e 'mv $f ~/Screenshots'"
 bindsym $mod+Print exec "scrot -ue 'mv $f ~/Screenshots'"
+bindsym $mod+Shift+s exec --no-startup-id ~/wm/dotfiles/monitors.sh
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
