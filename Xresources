@@ -49,3 +49,12 @@ URxvt.colorBD: rgb:ff/ff/ff
 
 URxvt.transparent:   true
 URxvt.shading:       20
+
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
