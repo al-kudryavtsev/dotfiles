@@ -124,3 +124,7 @@ eval "$(pyenv virtualenv-init -)"
 
 
 export $(gnome-keyring-daemon -s)
+
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+
+source ~/wm/dotfiles/bash_prompt.sh

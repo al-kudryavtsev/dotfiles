@@ -1,0 +1,7 @@
+[user]
+	email = a.o.kudryavtsev@gmail.com
+	name = Alexander Kudryavtsev
+[core]
+	editor = vim
+[color]
+	ui = always
