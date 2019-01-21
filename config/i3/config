@@ -136,6 +136,8 @@ exec --no-startup-id "setxkbmap -model pc105 -layout us,ru -option grp:caps_togg
 exec --no-startup-id ~/.fehbg
 # exec --no-startup-id "compton -b"
 
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+
 # git clone https://github.com/guimeira/i3lock-fancy-multimonitor.git
 exec --no-startup-id xautolock -time 5 -locker "~/wm/i3lock-fancy-multimonitor/lock -n -p"
 bindsym $mod+o exec --no-startup-id "~/wm/i3lock-fancy-multimonitor/lock -n -p"
